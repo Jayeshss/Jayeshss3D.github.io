@@ -5,89 +5,89 @@
   box-sizing: border-box;
 }
 
+/* GLOBAL */
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  background: radial-gradient(circle at top, #0b1c2d, #050505);
+  font-family: 'Inter', sans-serif;
+  background: #0b0b0b;
   color: #ffffff;
+  line-height: 1.6;
 }
 
 /* HERO */
 .hero {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  max-width: 1100px;
+  margin: auto;
+  padding: 80px 20px 60px;
 }
 
-.hero-card {
-  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-  padding: 80px 100px;
-  border-radius: 18px;
-  text-align: center;
-  box-shadow: 0 30px 80px rgba(0,0,0,0.6);
+.hero h1 {
+  font-size: 42px;
+  font-weight: 700;
+  letter-spacing: 2px;
 }
 
-.hero-card h1 {
-  font-size: 64px;
-  letter-spacing: 4px;
+.hero .year {
+  display: block;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #aaaaaa;
 }
 
-.hero-card .year {
-  font-size: 22px;
-  opacity: 0.7;
-  margin-left: 10px;
-}
-
-.hero-card p {
-  margin-top: 20px;
+.hero p {
+  margin-top: 8px;
+  font-size: 15px;
   color: #cccccc;
 }
 
-/* PROJECTS */
-.projects {
-  max-width: 1200px;
+/* WORKS */
+.works {
+  max-width: 1100px;
   margin: auto;
-  padding: 100px 20px;
+  padding: 40px 20px;
 }
 
-.projects h2 {
-  font-size: 32px;
-  margin-bottom: 40px;
+.works h2 {
+  margin-bottom: 30px;
+  font-size: 20px;
 }
 
 /* GRID */
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
 }
 
 /* CARD */
 .card {
-  background: #121212;
-  padding: 16px;
+  background: #141414;
+  padding: 28px;
   border-radius: 14px;
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
 
-.card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 20px 40px rgba(0,0,0,0.6);
-}
-
-.card img {
-  width: 100%;
-  border-radius: 10px;
+.card h3 {
+  font-size: 16px;
+  font-weight: 600;
 }
 
 .card p {
-  margin-top: 14px;
-  color: #bbbbbb;
+  margin-top: 6px;
+  font-size: 13px;
+  color: #9a9a9a;
+}
+
+/* HOVER */
+.card:hover {
+  transform: translateY(-8px);
+  background: #1c1c1c;
 }
 
 /* FOOTER */
 footer {
   text-align: center;
-  padding: 40px;
+  padding: 40px 20px;
+  font-size: 13px;
   color: #777777;
 }
