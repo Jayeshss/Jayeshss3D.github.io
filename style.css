@@ -1,93 +1,112 @@
-/* RESET */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 /* GLOBAL */
 body {
-  font-family: 'Inter', sans-serif;
-  background: #0b0b0b;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #0e0e0e;
   color: #ffffff;
-  line-height: 1.6;
 }
 
-/* HERO */
-.hero {
-  max-width: 1100px;
-  margin: auto;
-  padding: 80px 20px 60px;
+/* HEADER */
+header {
+  padding: 70px 20px;
+  text-align: center;
 }
 
-.hero h1 {
+header h1 {
   font-size: 42px;
-  font-weight: 700;
-  letter-spacing: 2px;
+  margin-bottom: 10px;
 }
 
-.hero .year {
-  display: block;
-  margin-top: 10px;
-  font-size: 14px;
-  color: #aaaaaa;
+header p {
+  color: #bbbbbb;
+  font-size: 16px;
 }
 
-.hero p {
-  margin-top: 8px;
-  font-size: 15px;
+/* BIO */
+.bio {
+  max-width: 900px;
+  margin: 0 auto 70px;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.bio p {
+  font-size: 18px;
+  line-height: 1.7;
   color: #cccccc;
 }
 
-/* WORKS */
-.works {
+.bio strong {
+  color: #ffffff;
+}
+
+.links {
+  margin-top: 25px;
+}
+
+.links a {
+  display: inline-block;
+  margin: 0 10px;
+  padding: 10px 22px;
+  border: 1px solid #333;
+  border-radius: 30px;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.links a:hover {
+  background: #ffffff;
+  color: #000000;
+}
+
+/* SECTION */
+section {
   max-width: 1100px;
   margin: auto;
   padding: 40px 20px;
 }
 
-.works h2 {
-  margin-bottom: 30px;
-  font-size: 20px;
+section h2 {
+  margin-bottom: 25px;
+  text-align: center;
 }
 
 /* GRID */
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 24px;
+  gap: 22px;
 }
 
 /* CARD */
 .card {
-  background: #141414;
-  padding: 28px;
-  border-radius: 14px;
-  transition: all 0.3s ease;
-  cursor: pointer;
+  background: #161616;
+  padding: 15px;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
 }
 
-.card h3 {
-  font-size: 16px;
-  font-weight: 600;
+.card:hover {
+  transform: translateY(-6px);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
 }
 
 .card p {
-  margin-top: 6px;
-  font-size: 13px;
-  color: #9a9a9a;
-}
-
-/* HOVER */
-.card:hover {
-  transform: translateY(-8px);
-  background: #1c1c1c;
+  margin-top: 12px;
+  color: #cccccc;
+  font-size: 14px;
 }
 
 /* FOOTER */
 footer {
   text-align: center;
-  padding: 40px 20px;
-  font-size: 13px;
+  padding: 30px;
   color: #777777;
+  font-size: 14px;
 }
